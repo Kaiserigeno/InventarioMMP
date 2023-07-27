@@ -1,0 +1,30 @@
+<%- include ('partials/header.ejs'); -%>
+    <div class="container">
+        <% if (message != '') { %>
+            <p class="text-center text-danger"><%= message %></p>
+        <% } %>
+        <form class="add-herramienta-form" action="" method="post" enctype="multipart/form-data">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="id_herramienta" id="id-herramienta" placeholder="ID" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="descripcion" id="descripcion" placeholder="Descripcion " required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="cantidad" id="cantidad" placeholder="Cantidad" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="ubicacion" id="ubicacion" placeholder="Ubicacion" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary float-right">Add Herramienta</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
